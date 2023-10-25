@@ -4,7 +4,7 @@ import App from './App.tsx'
 import './index.css'
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
-import Items from "./views/Items"
+import Items from "./components/Items.jsx"
 import Item from "./components/Item"
 
 
