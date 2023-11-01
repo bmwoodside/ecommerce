@@ -62,6 +62,13 @@ const Items = (props) => {
                                     ? (<div className="weapon-info">
                                         <p className="text-sm text-gray-500">Damage: {oneItem.damage.damage_dice} {oneItem.damage.damage_type.index}</p>
                                         <p className="text-sm text-gray-500">Range: {oneItem.range.normal === 5 ? "Melee" : oneItem.range.normal}</p>
+
+                                        {/* See how my styling is different than the other button below?? -- I'm a placeholder button so you don't forget -- remove me */}
+                                        <button type="button" className="rounded-full bg-indigo-600 px-3 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                                            Add To Cart
+                                        </button>
+                                        {/* Remove the button element above this line (after fixing styles) -- don't forget! */}
+
                                     </div>)
                                 : oneItem.equipment_category.index == "armor"
                                     ? (<div className="armor-info">
@@ -76,6 +83,11 @@ const Items = (props) => {
                                     {/* <p className="text-sm italic text-gray-500">{product.options}</p> */}
                                     <p className="text-sm italic text-gray-500">placeholder options</p>
                                     <p className="text-base font-medium test-gray-900">{oneItem.cost.quantity} {oneItem.cost.unit}</p>
+
+                                    {/* styling is jacked up - this is full div width but above is only partial... pick a size */}
+                                    <button type="button" className="rounded-full bg-indigo-600 px-3 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                                        Add To Cart
+                                    </button>
                                 </div>
                             </div>
                         </div>
