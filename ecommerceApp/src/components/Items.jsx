@@ -138,11 +138,9 @@ const Items = (props) => {
                                                 </Link>
                                             </h3>
             
-                                            {oneItem.equipment_category.index == "weapon"
+                                            {oneItem.equipment_category.index == "weapon" && oneItem.damage /* must include oneItem.damage because the "net" item fucking breaks it */
                                                 ? (<div className="weapon-info">
-                                                    {/* the commented line below about damage_dice is erroring for what feels like an issue with 
-                                                    the equipment_category condition checking - seems to not differentiate correctly. */}
-                                                    {/* <p className="text-sm text-gray-500">Damage: {oneItem.damage.damage_dice} {oneItem.damage.damage_type.index}</p> */}
+                                                    <p className="text-sm text-gray-500">Damage: {oneItem.damage.damage_dice} {oneItem.damage.damage_type.index}</p>
                                                     <p className="text-sm text-gray-500">Range: {oneItem.range.normal === 5 ? "Melee" : oneItem.range.normal}</p>
             
                                                     {/* See how my styling is different than the other button below?? -- I'm a placeholder button so you don't forget -- remove me */}

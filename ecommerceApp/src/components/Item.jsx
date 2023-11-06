@@ -130,6 +130,22 @@ const Item = (props) => {
 
             <button className="rounded-full bg-indigo-400" onClick={GetAllEquipmentFromGraphQL}>fetch data</button>
 
+        {
+        itemsList
+        ? (
+            <>
+            {/* placeholder weapon */}
+            <h1>{itemsList[0].index}</h1>
+            <h1>{itemsList[0].damage.damage_dice}</h1>
+            <h1>{itemsList[0].damage.damage_type.index}</h1>
+            <h1>{itemsList[0].range.normal === 5 ? "melee" : itemsList[0].range.normal}</h1>
+            </>
+            )
+
+        :null
+        }
+
+
             <hr />
             {
                 itemsList
@@ -140,8 +156,8 @@ const Item = (props) => {
                             <div>
                                 <h1 key={i}>{oneItem.index}</h1>
 
-                                {/* this doesn't work obv - has nested children for the right info - adding the correct info breaks this shit for some reason */}
-                                <h1>{oneItem.damage_type}</h1>
+                                <h1>{oneItem.damage_type.index}</h1>
+                                <h1>{oneItem.damage.damage_dice}</h1>
                                 
                                 <h1>{oneItem.equipment_category.index}</h1>
                             </div>
