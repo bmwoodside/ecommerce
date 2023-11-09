@@ -132,7 +132,7 @@ const Items = (props) => {
             
                                         <div className="pb-4 pt-10 text-center flex flex-1 flex-col space-y-2 p-4">
                                             <h3 className="text-sm font-medium text-gray-900">
-                                                <Link to={`/items/${oneItem.name}`}>
+                                                <Link to={`/items/${oneItem.index}`}>
                                                     <span aria-hidden="true" className="absolute inset-0" />
                                                     {oneItem.name}
                                                 </Link>
