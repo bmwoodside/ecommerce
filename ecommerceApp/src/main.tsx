@@ -6,6 +6,7 @@ import './index.css'
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import Items from "./components/Items.jsx"
 import Item from "./components/Item"
+import UserCart from "./components/UserCart"
 
 
 const router = createBrowserRouter([
@@ -17,6 +18,9 @@ const router = createBrowserRouter([
 
   { path: "/items", element: <Items />, },
   { path: "/items/:_id", element: <Item />, },
+
+  // this needs validation for userState/session/cookies - however I decide to handle items in cart
+  { path: "/userCart", element: <UserCart />, }
 ]);
 
 
