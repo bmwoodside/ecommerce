@@ -1,4 +1,4 @@
-# ecommerce (Work-in-progress
+# ecommerce (Work-in-progress)
 
 Very much still a work-in-progress when I have time - this will eventually be tied into my upcoming ttrpg project!
 
