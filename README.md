@@ -1,5 +1,7 @@
 # ecommerce (Work-in-progress)
 
+## UPDATE (2024-08-11): Will keep repo "public" for now as sort of a "where have we come from" view, but this work has not been touched in over 9 months, and there is currently no plan in the near future to resume work on this project.
+
 Very much still a work-in-progress when I have time - this will eventually be tied into my upcoming ttrpg project!
 
 basic ecommerce website from scratch - sort of... *Now using DND5e API!*
